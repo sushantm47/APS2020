@@ -1,0 +1,17 @@
+n=int(input())
+result=[0 for x in range (0,n+1) ]
+result[0]=1
+for i in range(n+1):
+    if(i>=3):
+        x=i-3
+        result[i]+=result[x]
+for i in range(n+1):
+    if(i>=5):
+        x=i-5
+        result[i]+=result[x]
+for i in range(n+1):
+    if(i>=10):
+        x=i-10
+        result[i]+=result[x]
+
+print(result[-1])
