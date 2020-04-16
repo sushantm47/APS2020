@@ -1,0 +1,30 @@
+KAdane :
+    Perform subarray functions like sum ,min ,max
+    Efficiency O(n)
+
+Segment tree:
+    Height of tree->logn
+    nodes->2n-1
+    creation->O(n)
+    query,update->logn
+    Updation of value is fine but add or delete is prohibited.
+
+Lookup table:
+    Size depends on nature of problem but querry time is O(n) 
+
+Sparse table:
+    Space:nlogn
+    Query time :O(1)
+    Processing time:nlogn
+    
+Sqrt decomposition and MO’s algorithm:
+    Space eff:sqrt(n)
+    Query time:
+    All the queries are to be known in advance
+
+Fenwick tree:
+    Space eff:n
+    Query eff:logn
+
+Persistent segment tree:
+
