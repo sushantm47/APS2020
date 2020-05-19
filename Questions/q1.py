@@ -1,7 +1,7 @@
 # The demons are on their way to attack the island of humans but to stop them from achieving their goal are a warrior and wizard 
 # a warrior can win a duel against the  demon with lower powerlevel than his i.e w>d where w,s denotes warrior's and demons power level respectively
 # and a wizard can defeat the demon  with powerlevel (WZ) equal to that of wizard or multiple of his power 
-#if all the demons are defeated then the the message to be displayed is victory
+# if all the demons are defeated then the the message to be displayed is victory
 # else the message to be displayed is We are Doommed 
 # the battel formation is in form of a pascal triangle as shown below 
 # 1  
@@ -22,22 +22,21 @@
 #  else print "WE ARE DOOMED"
 
 # Constraints:
-# 1 <= N <= 10
+# 1 <= N <= 15
 
 def printPascal(n,s1,w) : 
     demonCount=0
     deadDemons=0
     defeatedDemons=[]
-    for line in range(0, n) : 
+    for line in range(0, n) :   
         for i in range(0, line + 1) :
             x= binomialCoeff(line, i)
             demonCount+=1
             if(x<s1 or x%w==0 or x<w ):
                 deadDemons+=1
                 defeatedDemons.append(x)
-            print(x, 
-                " ", end = "") 
-        print()
+        #     print(x," ", end = "") 
+        # print()
     # print(deadDemons,demonCount,l)
     if(deadDemons==demonCount):
         print("VICTORY")
